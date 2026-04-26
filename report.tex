@@ -80,13 +80,34 @@
         \centering
         \caption{零件图改进}
         \label{tab:drawing_fix}
-        \begin{tabular}{p{1.2cm} p{2.2cm} p{4.2cm} p{5.8cm}}
+        \begin{tabular}{p{1.2cm} p{2.2cm} p{3.2cm} p{3.8cm} p{3cm} p{1cm} }
             \toprule
-            序号 & 改进类别   & 错误点                    & 改进方案                                 \\
+            序号 & 改进类别    & 错误点                                & 改进方案                                 & 图示 \\
             \midrule
-            1  & 视图表达改进 & 左视图（左侧视图）投影错误，线型使用混乱   & 按“长对正、高平齐、宽相等”修正轮廓线，保证与主视图槽口、孔系的投影对应 \\
-            2  & 尺寸标注改进 & 尺寸标注位置混乱、交叉            & 将交叉的尺寸线调整至视图外部                       \\
-            3  & 结构改进   & 零件上方两个螺栓孔未标注尺寸且其中一孔未倒角 & 标注尺寸，对未倒角孔进行 120°倒角，轴向尺寸为2 mm        \\
+            1  & 视图表达改进  & 左视图（左侧视图）投影错误，线型使用混乱               & 按“长对正、高平齐、宽相等”修正轮廓线，保证与主视图槽口、孔系的投影对应 & 略  \\
+            2  & 尺寸标注改进  & 尺寸标注位置混乱、交叉                        & 将交叉的尺寸线调整至视图外部                       & 略  \\
+            3  & 结构改进    & 零件上方两个螺栓孔未标注尺寸且其中一孔未倒角             & 标注尺寸，对未倒角孔进行 120°倒角，轴向尺寸为2 mm        &
+            \begin{minipage}[b]{0.22\columnwidth}
+                \centering
+                {\includegraphics[width=0.9\textwidth]{Img/图片3.png}}
+            \end{minipage} \\
+
+            4  & 表面粗糙度改进 & 左侧视图外轮廓面缺少粗糙度标注                    & 按国标绘制完整粗糙度符号，尖角指向材料表面。                &
+            \begin{minipage}[b]{0.9\linewidth}
+                \centering
+                \raisebox{-0.5\height}{\includegraphics[width=0.9\linewidth]{Img/图片4.png}}
+            \end{minipage} \\
+            5  & 表面粗糙度改进 & M8螺栓支承面Ra1.6的粗糙度过低                 & 将该面粗糙度修正为Ra3.2，与普通螺栓支承面的通用要求匹配，节约成本。  &
+            \begin{minipage}[b]{0.9\linewidth}
+                \centering
+                \raisebox{-0.5\height}{\includegraphics[width=0.9\linewidth]{Img/图片5.png}}
+            \end{minipage} \\
+            6  & 结构工艺性改进 & 左侧视图阶梯过渡转角为直角，未标注铸造圆角，易产生铸造缺陷与应力集中 & 在该转角处添加 R3~R5 的铸造圆角，按国标绘制圆角轮廓线       &
+            \begin{minipage}[b]{0.9\linewidth}
+                \centering
+                \raisebox{-0.5\height}{\includegraphics[width=0.9\linewidth]{Img/图片6.png}}
+            \end{minipage} \\
+
             \bottomrule
         \end{tabular}
     \end{table}
